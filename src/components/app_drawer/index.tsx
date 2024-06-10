@@ -1,4 +1,6 @@
-export const Drawer = (props) => {
+import { FunctionComponent, ReactNode } from "react";
+
+export const AppDrawer: FunctionComponent<{ children: ReactNode }> = (props) => {
   return (
     <div className="drawer">
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
@@ -9,7 +11,7 @@ export const Drawer = (props) => {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+        <ul className="menu min-h-full w-80 bg-base-200 p-4 text-base-content">
           {/* Sidebar content here */}
           <li>
             <a>Sidebar Item 1</a>

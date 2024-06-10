@@ -1,5 +1,6 @@
+import { FunctionComponent } from "react";
 import style from "./intro.module.scss";
-export const Intro = () => {
+export const Intro: FunctionComponent = () => {
   return (
     <div className=" flex flex-col items-center space-y-[29px] bg-[#576ECD] px-4 pb-[60px]">
       <div className="flex flex-col">
@@ -19,14 +20,14 @@ export const Intro = () => {
           ของคณะที่ได้รับการคัดเลือกเพื่อทำนายความ สำเร็จของวิทยาลัย
         </h1>
       </div>
-      <h1 className="text-center font-['Kanit'] text-base font-medium leading-7 text-white">
+      <h1 className="text-center font-kanit text-base font-medium leading-7 text-white">
         อยากรู้มั้ย ?<br />
         ว่าความสำเร็จของคุณจะออกมาเป็นแบบไหน
       </h1>
       <button className="btn w-full items-center justify-center rounded-2xl border-0 bg-orange-600 p-2.5 hover:bg-orange-400">
-        <div className="font-['Kanit'] text-xl font-semibold text-white ">
+        <h1 className="font-kanit text-xl font-semibold text-white ">
           กรอกข้อมูล
-        </div>
+        </h1>
       </button>
     </div>
   );
